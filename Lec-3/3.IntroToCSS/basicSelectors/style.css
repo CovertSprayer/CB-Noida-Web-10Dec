@@ -1,0 +1,25 @@
+/* ------------- universal selector */
+*{
+    border: 2px solid blue;
+}
+/* ------------- element selector */
+p{
+    color:green;
+}
+h1{
+    color: blue;
+}
+/* ------------- id selector */
+#special{
+    color: aqua;
+}
+/* -------------- class selector */
+.other{
+    color: black;
+    text-decoration: line-through;
+}
+
+a[href="https://www.google.com"]{
+    font-size: 40px;
+}
+
