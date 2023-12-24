@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* html{
+    font-size: 16px;
+} */
+
+.parent{
+    border: 2px solid black;
+    height: 80vh;
+    width: 50vw;
+    /* width: 300px; */
+}
+
+.child{
+    border: 2px solid red;
+    height: 50%;
+    width: 40vw;
+    font-size: 2rem;
+    /* height: 100px; */
+}
+
+.container{
+    font-size: 10px;
+}
+
+.container p{
+    font-size: 2em;
+}
+
+.container h4{
+    font-size: 2.5em;
+}
+

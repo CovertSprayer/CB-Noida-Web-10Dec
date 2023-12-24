@@ -1,0 +1,48 @@
+
+/* ----------------------- pseudo classes */
+/* ul li:first-child{
+    color: aqua;
+}
+
+ul li:last-child{
+    color: blue;
+}
+
+ul li:nth-child(2n){
+    color:green;
+} */
+
+ul li:nth-child(2n){
+    background-color: grey;
+}
+
+ul li:nth-child(2n+1){
+    background-color: rgba(128, 128, 128, 0.525);
+}
+
+input:focus{
+    background-color: aquamarine;
+    font-size: 30px;
+}
+
+/* ------------------------- pseudo elements */
+ul li::after{
+    content: " ❌";
+}
+
+ul li:first-child::before{
+    content: "💀";
+}
+
+.fav-movie::before{
+    content: "😱";
+}
+
+p::first-letter{
+    font-size: 40px;
+}
+
+p::first-line{
+    color: red;
+}
+
