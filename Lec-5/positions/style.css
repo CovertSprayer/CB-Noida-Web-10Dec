@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    min-height: 100vh;
+    background-color: aquamarine;
+    position: relative;
+    margin-top: 100px;
+}
+
+.child{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: yellow;
+    margin: 10px;
+    font-size: 2rem;
+}
+
+.child-2{
+    background-color: orange;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+
+.child-3{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.child-4{
+    top: 50px;
+    position: sticky;
+    /* right: 0; */
+}
