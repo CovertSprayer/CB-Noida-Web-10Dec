@@ -1,0 +1,18 @@
+/* h1{
+    border: 2px solid red;
+    display: inline;
+} */
+
+
+/* height, width and margin won't work with display inline*/
+/* h1{
+    border: 2px solid red;
+    display: inline; 
+    height: 200px;
+} */
+
+h1{
+    border: 2px solid red;
+    display: inline-block;
+    height: 200px;
+}
