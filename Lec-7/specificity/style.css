@@ -1,0 +1,21 @@
+/* inline > id > class > element > universal selector */
+
+/* inline > internal or external */
+
+#special{
+    color: blue;
+}
+
+h1{
+    color: aqua;
+}
+
+.heading{
+    color: green;
+}
+
+h1{
+    color: red;
+}
+
+
