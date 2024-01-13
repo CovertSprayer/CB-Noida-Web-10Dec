@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    perspective: 800px;
+}
+
+.container{
+    height: 380px;
+    width: 280px;
+    border: 2px solid black;
+    margin: 50px auto;
+    transition-duration: 1s;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.photo, .content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.photo{
+    background-color: burlywood;
+    background: url(https://media.assettype.com/filmcompanion%2F2023-10%2Fc4b7dd29-feeb-46c3-a12e-813599ad58ea%2FCover.png);
+    background-size: cover;
+}
+
+.container:hover{
+    transform: rotateY(180deg);
+}
+
+.content{
+    background-color: aquamarine;
+    font-size: 1.4rem;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
