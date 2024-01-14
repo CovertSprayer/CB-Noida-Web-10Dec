@@ -1,0 +1,25 @@
+
+.container{
+    border: 2px solid black;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+p{
+    font-size: 28px;
+}
+
+@media (max-width:980px){
+    .container{
+        width: 500px;
+        padding: 0;
+    }
+}
+
+@media (max-width:600px){
+    .container{
+        width: 100%;
+        font-size: 0.5rem;
+    }
+}
