@@ -23,4 +23,4 @@ temp();
 var a = 100;
 
 // console.log(x) // -> cannot access before initialization (DTZ);
-// let x = 10;
+let x = 10;
