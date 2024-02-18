@@ -15,15 +15,28 @@ function addTextToList(text){
     todo.classList.add('todo');
 
     todo.innerHTML = ` <div class="left">
-                            <input type="checkbox">
+                            <input class="check" type="checkbox">
                             <p>${text}</p>
                         </div>
                         <div class="right">
-                            <span>⬆️</span>
-                            <span>🗑️</span>
-                            <span>⬇️</span>
+                            <span class = "up-arrow">⬆️</span>
+                            <span class = "trash-bin">🗑️</span>
+                            <span class = "down-arrow">⬇️</span>
                         </div>`
 
     list.append(todo);
     // console.log(todo);
 }
+
+list.addEventListener('click', (e)=>{
+    const element = e.target;
+    if(element.classList.contains('check')){
+        const para = element.nextElementSibling;
+        // console.log(para);
+        para.classList.toggle('completed');
+    }
+
+    if(element.classList.contains('trash-bin')){
+        element.parentElement.parentElement.remove();
+    }
+})
