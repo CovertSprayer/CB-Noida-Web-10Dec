@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #f1f5f8;
+}
+
+.container{
+    /* border: 2px solid black; */
+    max-width: 500px;
+    min-height: 400px;
+    width: 70vw;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px grey;
+    border-radius: 20px;
+}
+
+h1{
+    /* text-align: center; */
+    font-size: 3rem;
+}
+
+form{
+    /* border: 2px solid red; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* gap: 20px; */
+    min-width: 400px;
+    margin-bottom: 10px;
+}
+
+form input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    font-size: 1.4rem;
+    padding: 3px 8px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+form button{
+    font-size: 1.4rem;
+    padding: 3px 22px;
+    cursor: pointer;
+}
+
+form input:focus{
+    color: green;
+}
+
+.list{
+    /* border: 2px solid red; */
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.todo{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.list .todo:first-child .up-arrow{
+    /* display: none; */
+    visibility: hidden;
+}
+
+.list .todo:last-child .down-arrow{
+    /* display: none; */
+    visibility: hidden;
+}
+
+.right span{
+    cursor: pointer;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+

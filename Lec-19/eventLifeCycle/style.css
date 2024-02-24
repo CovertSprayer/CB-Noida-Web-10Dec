@@ -1,0 +1,18 @@
+div{
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid black;
+    padding: 50px;
+}
+
+.grand-parent{
+    background-color: yellow;
+}
+
+.parent{
+    background-color: lightblue;
+}
+
+.child{
+    background-color: lightcoral;
+}
