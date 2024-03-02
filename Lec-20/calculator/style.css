@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: comic sans MS;
+}
+
+h1{
+    text-align: center;
+}
+
+.calculator{
+    border: 2px solid black;
+    min-height: 300px;
+    width: 440px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+td {
+    width: 90px;
+    height: 60px;
+    margin: 10px;
+}
+
+table tr{
+    margin-bottom: 20px;
+}
+
+.screen{
+    width: 95%;
+    border: 2px solid black;
+    height: 50px;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    font-family: inherit;
+    cursor: pointer;
+}
