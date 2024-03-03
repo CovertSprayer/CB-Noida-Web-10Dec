@@ -1,11 +1,10 @@
-const api = 'https://dummyjson.com/products';
 const list = document.querySelector('.list');
+const api = 'https://dummyjson.com/products';
 const searchBox = document.querySelector('input');
 
 async function getData() {
-    const res = await fetch('https://dummyjson.com/products');
-    const data = await res.json();
-    return data.products;
+    const res = await axios.get(api);
+    return res.data.products;
 }
 
 function render(data){
