@@ -1,0 +1,11 @@
+.list{
+    /* display: flex; */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+img{
+    height: 200px;
+    object-fit: contain;
+}
