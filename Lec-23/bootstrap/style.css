@@ -1,0 +1,14 @@
+.parent{
+    border: 2px solid red;
+    width: 80vw;
+    min-height: 80vh;
+    /* display: flex; */
+    /* gap: 20px; */
+}
+
+.child{
+    width: 180px;
+    height: 80px;
+    background-color: aquamarine;
+    border: 2px solid black;
+}
