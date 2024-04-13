@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/users/new">create user</a>
+    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <% for(let user of users){ %>
+            <div style="border: 2px solid black; max-width: 300px; padding: 10px;">
+                <h4><%= user.firstName %></h4>
+                <p><%= user.role %></p>
+
+                <a href="/users/<%= user.id %>">Show</a>
+                <a href="/users/<%= user.id %>/edit">Edit</a>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>
