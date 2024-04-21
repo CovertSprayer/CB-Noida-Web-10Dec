@@ -55,9 +55,9 @@ async function deleteUsers(filter){
 // deleteUsers({email: "shubham@gmail.com"})
 
 /**
- * 
- * model.findById()
- * model.findByIdAndUpdate()
- * model.findByIdAndDelete()
+ * id = '2138217398sjhsdhfks'
+ * model.findById(id)
+ * model.findByIdAndUpdate(id, {})
+ * model.findByIdAndDelete(id)
  * 
  */
