@@ -1,0 +1,25 @@
+<%- layout('/layouts/boilerplate') -%>
+    
+    <div class="row">
+        <div class="col-12 col-md-6 mx-auto">
+            <form action="/products" method="post">
+                <div class="mb-3">
+                  <label for="product-name" class="form-label">Product Name</label>
+                  <input name="title" type="text" class="form-control" id="product-name" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="image-inp" class="form-label">Image Link</label>
+                  <input name="image" type="text" class="form-control" id="image-inp">
+                </div>
+                <div class="mb-3">
+                  <label for="price-inp" class="form-label">Price</label>
+                  <input name="price" type="text" class="form-control" id="price-inp">
+                </div>
+                <div class="mb-3">
+                  <label for="desc-inp" class="form-label">Description</label>
+                  <textarea class="form-control" name="description" id="desc-inp" cols="30" rows="6"></textarea>
+                </div>
+                <button type="submit" class="btn btn-sm btn-primary">Submit</button>
+              </form>   
+        </div>
+    </div>

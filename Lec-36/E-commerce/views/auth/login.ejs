@@ -1,0 +1,16 @@
+<% layout('/layouts/boilerplate') -%>
+
+<form action="/login" method="post" class="mx-auto needs-validation" style="width: 600px;" novalidate>
+    <div class="mb-3">
+        <label for="username" class="form-label">Username:</label>
+        <input required name="username" type="text" class="form-control" id="username" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password:</label>
+        <input required name="password" type="password" class="form-control" id="password">
+    </div>
+    
+    <button type="submit" class="btn btn-sm btn-primary">Login</button>
+
+    <p class="mt-2">Haven't registered yet? <a href="/register">register</a></p>
+</form>
