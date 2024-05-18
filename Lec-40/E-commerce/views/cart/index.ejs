@@ -1,0 +1,38 @@
+<%- layout('/layouts/boilerplate') -%>
+
+
+<h1 class="display-5">User Cart</h1>
+
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <% for( let item of productsInCart ) { %>
+            <div class="card mb-3" style="max-width: 640px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="<%= item.productId.image %>" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title d-flex justify-content-between align-items-center">
+                        <span><%= item.productId.title %></span>
+                        <form action="/products/<%= item.productId._id %>/cart?_method=DELETE" method="post">
+                            <button class="btn btn"><i class="fa-solid fa-xmark"></i></button>
+                        </form>
+                    </h5>
+                      <p class="card-text"><%= item.productId.description %></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        <% } %>
+    </div>
+    <div class="col-12 col-lg-4 mx-auto">
+        <ul class="list-group">
+            <% for( let item of productsInCart ) { %>
+                <li class="list-group-item"><strong><%= item.productId.title %></strong> - &#8377; <%= item.productId.price %> * <%= item.quantity %></li>
+            <% } %>
+            <li class="list-group-item"><strong>Total</strong> - &#8377; <%= totalPrice %> </li>
+        </ul>
+        <button class="btn btn-sm btn-success my-3">Checkout</button>
+    </div>
+</div>
