@@ -1,0 +1,23 @@
+.container{
+    max-width: 470px;
+    /* padding: 0; */
+}
+
+.chat-container{
+    min-height: 400px;
+    height: 450px;
+    overflow-y: auto;
+}
+
+.text-msg{
+    background-color: #4ba3c3;
+    color: white;
+    border-radius: 20px;
+    width: 75%;
+}
+
+.receiver{
+    margin-left: auto;
+    background-color: #84dcc6;
+
+}
