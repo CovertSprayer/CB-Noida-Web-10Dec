@@ -1,0 +1,25 @@
+nav{
+    height: 4rem;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 0 30px;
+    background-color: aliceblue;
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li{
+    list-style-type: none;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}

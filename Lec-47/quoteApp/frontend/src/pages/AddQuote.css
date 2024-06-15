@@ -1,0 +1,38 @@
+form{
+    /* border: 2px solid red; */
+    width: 60vw;
+    margin: 40px auto;
+    padding: 10px;
+    box-shadow: 1px 1px 20px #a2e3c4;
+}
+
+form label{
+    font-size: 1.4rem;
+}
+
+form input, textarea{
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.503);
+    margin-top: 4px;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+.form-control{
+    margin-bottom: 20px;
+}
+
+textarea{
+    border: 1px solid black;
+}
+
+form button{
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+}
